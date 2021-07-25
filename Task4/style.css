@@ -1,0 +1,18 @@
+p {
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
+    width: 80%;
+}
+
+div {
+    background:
+    url(ramka_angle1.png) top left no-repeat,
+    url(ramka_angle2.png) right top no-repeat,
+    url(ramka_band1.png) top repeat-x,
+    url(ramka_angle4.png) left bottom no-repeat,
+    url(ramka_band2.png) left repeat-y,
+    url(ramka_angle3.png) right bottom no-repeat,
+    url(ramka_band3.png) right repeat-y,
+    url(ramka_band4.png) bottom repeat-x;
+    }

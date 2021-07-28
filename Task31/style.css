@@ -1,0 +1,19 @@
+h1, h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.p_01 {
+   white-space: pre;
+   font-family: 'Oswald', sans-serif;
+}
+
+.p_02 {
+    white-space: pre;
+    font-family: 'Dancing Script', cursive; 
+}
+ 

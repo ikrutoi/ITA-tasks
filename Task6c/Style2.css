@@ -1,0 +1,33 @@
+.data {
+    color: green;
+}
+
+.chempion {
+    color: red;
+}
+
+.img {
+    float: left;
+    margin: 3px 5px 0 0;
+}
+
+.info, .text, .end {
+    color: blue;
+}
+
+.text {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h1, .data, .chempion, .info {
+    margin: 5px 0;
+}
+
+.end {
+    text-decoration: none;
+}
+
+.info::before {
+    content: url(/Task6c/extref.png);
+}

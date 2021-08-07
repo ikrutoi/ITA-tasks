@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+b {
+    color: red;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+body div:nth-of-type(2) td:nth-of-type(-n+4) {
+    border-right: solid red 2px;
+}
+
+span {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+span:nth-of-type(-n+4) {
+    border-right: solid red 3px;
+}

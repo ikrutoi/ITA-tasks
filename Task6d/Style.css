@@ -1,0 +1,16 @@
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+a:hover {
+    background-image: url(/Task6d/star11.png);
+}
+
+a:hover ~ a {
+    background-image: url(/Task6d/star11.png);
+}

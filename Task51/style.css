@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+.cont-header, .foot{
+    width: 100%;
+    height: 38px;
+    font-size: 1.5rem;
+    background: #A2D9F7;
+    padding-top: 5px;
+    color: #176286;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 100%;
+    background: url(/ITA-tasks/Task5/Img/ball02.png) top right repeat-y;
+}
+
+.tabl01 {
+    border-collapse: collapse;
+    width: 100%;
+    background: url(/ITA-tasks/Task5/Img/background-yellow.png) left top repeat-y;
+}
+
+.th1-1 {
+    width: 300px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.th1-2 {
+    font-size: 1.5rem;
+}
+
+.th2-2 {
+    padding-left: 10px;
+    
+}
+
+.list, .text {
+    text-align: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.img {
+    float: left;
+    margin-right: 20px;
+}
+

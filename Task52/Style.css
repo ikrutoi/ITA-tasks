@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+.heading-top, .heading-bottom {
+    background: #A2D9F7;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    color: #176286;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.cont {
+    background: url(/Task52/Img/background-yellow.png) top left repeat-y;
+}
+
+.ball {
+    background: url(/Task52/Img/ball02.png) top right repeat-y;
+}
+
+.cont-left {
+    width: 250px;
+    float: left;
+}
+
+.cont-right {
+    margin-left: 270px;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-sport {
+    margin: 0;
+    padding: 10px 0 0 20px;
+    font-size: 1.2rem;
+}
+
+.text-football {
+    margin: 0 20px 0 0;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#img {
+    float: left;
+    margin: 0 20px 10px 0;
+}
+
+p {
+    margin-right: 20px;
+}
+

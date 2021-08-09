@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div>
+        <!-- Метод 1. Располагаем ссылки в строку при помощи таблицы.
+        Разделители сделаны знаком "|" 
+        Минус: разделитель фиксированный.-->
+        <table>
+            <tr>
+                <td><a href="https://ozon.ru/" target="blank">первая ссылка</a></td>
+                <td><b>|</b></td>
+                <td><a href="https://ozon.ru/" target="blank">вторая ссылка</a></td>
+                <td><b>|</b></td>
+                <td><a href="https://ozon.ru/" target="blank">третья ссылка</a></td>
+                <td><b>|</b></td>
+                <td><a href="https://ozon.ru/" target="blank">четвертая ссылка</a></td>
+                <td><b>|</b></td>
+                <td><a href="https://ozon.ru/" target="blank">пятая ссылка</a></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- Метод 2. Располагаем ссылки в строку при помощи таблицы.
+        Разделители сделаны при помощи бордера ячейки и селектора :nth-of-type. 
+        Плюс в том, что испоьзуем меньше кодов и можно менять толщину разделителя. -->
+        <table>
+            <tr>
+                <div>
+                    <td><a href="https://ozon.ru/" target="blank">первая ссылка</a></td>
+                    <td><a href="https://ozon.ru/" target="blank">вторая ссылка</a></td>
+                    <td><a href="https://ozon.ru/" target="blank">третья ссылка</a></td>
+                    <td><a href="https://ozon.ru/" target="blank">четвертая ссылка</a></td>
+                    <td><a href="https://ozon.ru/" target="blank">пятая ссылка</a></td>
+                </div>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <!-- Метод 3. Располагаем ссылки в строку, завернув каждую в спан.
+            Разделители сделаны при помощи бордера и селектора :nth-of-type.
+            Недостаток - семантический.
+         -->
+        <span><a href="https://ozon.ru/" target="blank">первая ссылка</a></span>
+        <span><a href="https://ozon.ru/" target="blank">вторая ссылка</a></span>
+        <span><a href="https://ozon.ru/" target="blank">третья ссылка</a></span>
+        <span><a href="https://ozon.ru/" target="blank">четвертая ссылка</a></span>
+        <span><a href="https://ozon.ru/" target="blank">пятая ссылка</a></span>
+    </div>
+</body>
+</html>

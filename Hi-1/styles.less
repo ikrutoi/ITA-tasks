@@ -29,14 +29,13 @@ body {
 .container {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 20px; 
 }
 
 .header {
     width: 100%;
     grid-area: header;
     z-index: 3;
-    background-color: @color_bg;
+    background-color: @color_background_header;
     box-shadow: @box_shadow_header;
 }
 
@@ -78,23 +77,28 @@ a {
     flex-direction: column;
 }
 
-.logo_hidragonfly p:first-child {
-    margin: 0;
-    padding-left: 20px;
-    font-size: 24px;
-    color: @color_cfb;
-    z-index: 3;
+.photo input {
+    border: none;
+    background-color: @color_bg;
 }
 
-.logo_hidragonfly p:last-child {
-    margin: 0;
-    padding: 0 0 6px 20px;
-    font-weight: 500;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
-    z-index: 3;
-}
+// .logo_hidragonfly p:first-child {
+//     margin: 0;
+//     padding-left: 20px;
+//     font-size: 24px;
+//     color: @color_cfb;
+//     z-index: 3;
+// }
+
+// .logo_hidragonfly p {
+//     margin: 0 0 6px 20px;
+//     // padding: 0 0 10px 20px;
+//     font-weight: 500;
+//     font-size: 14px;
+//     font-style: italic;
+//     text-align: center;
+//     z-index: 3;
+// }
 
 a:hover {
     color: @color_cfb;
@@ -269,6 +273,7 @@ li {
 
 .card_main_body {
     grid-row: 2/4;
+    background-color: @color_bg;
 }
 
 .container_card {
@@ -293,6 +298,13 @@ li {
     align-items: flex-end;
     border-bottom: solid @color_tx 1px;
     font-size: 0.9em;
+}
+
+.photo input {
+    font-size: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .card_footer {
@@ -321,6 +333,12 @@ li {
 }
 
 .envelope_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 55px auto;
+    grid-template-areas: 
+    addres_hi addres_stamp
+    addres_null addres_sender;
     margin: auto;
     .mixin_envelope_size();
     background-color: white;
@@ -329,16 +347,27 @@ li {
     box-shadow: @box_shadow_card;
 }
 
+.envelope_body img {
+    grid-area: addres_hi;
+    margin: 10% 0 0 10%;
+}
+
 .card_body {
     margin: auto;
     .mixin_card_size();
     position: relative;
     background: url(/img/your_photo_1.jpg);
     background-size: cover;
+    opacity: 1;
     border: solid rgba(60, 64, 67, 0.3) 0px;
-    transition: all 0.3s ease-in-out 0.1s;
+    transition: @transition_card;
     box-shadow: @box_shadow_card;
     z-index: 1;
+}
+
+.card_body._addres {
+    // display: none;
+    opacity: 0;
 }
 
 .blocks_text {
@@ -456,27 +485,27 @@ button svg {
     background-color: @color_cfb;
 }
 
-.logo_hi:hover:before {
+.logo_hi:before {
     left: 9px;
     background-color: @color_cfb;
 }
 
-.logo_hi:hover span:first-child {
+.logo_hi span:first-child {
     left: 18px;
     background-color: @color_cfb;
 }
 
-.logo_hi:hover span:last-child {
+.logo_hi span:last-child {
     transform: translate(-14px, -15px);
     background-color: @color_cfb;
 }
 
-.logo_hi:hover span:nth-child(2) {
+.logo_hi span:nth-child(2) {
     left: 9px;
     background-color: @color_cfb;
 }
 
-.logo_hi:hover::after {
+.logo_hi::after {
     width: 26px;
     bottom: 0;
     transform: rotate(-90deg) translate(-5px, 15px);

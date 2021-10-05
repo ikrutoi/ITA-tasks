@@ -32,8 +32,7 @@
                         </a>
                         <div class="logo_hidragonfly">
                             <a href="/collage.html">
-                                <p>Hidragonfly.com</p>
-                                <p>POSTCARD SERVICE</p>
+                                <img src="/logo/hidragonfly_logo_5.png" alt="hidragonfly.com">
                             </a>
                         </div>
                     </div>
@@ -74,20 +73,30 @@
                         <nav>
                             <a href="#" class="tab_item" data-tab-name="photo">Photo</a>
                             <a href="#" class="tab_item" data-tab-name="text">Text</a>
-                            <a href="#" class="tab_item" data-tab-name="addres">Addres</a>
+                            <a href="#" class="tab_item addres_click" data-tab-name="addres">Addres</a>
                             <a href="#" class="tab_item" data-tab-name="aroma">Aroma</a>
                             <a href="#" class="tab_item" data-tab-name="data">Data</a>
                         </nav>
                     </div>
                 </div>
-                <div class="card_main envelope_body"></div>
+                <div class="card_main envelope_body">
+                    <div>
+                        <img src="/logo/hidragonfly_logo_envelope_1.png">
+                    </div>
+                    <div class="envelope_addres"></div>
+                </div>
                 <div class="card_main card_body"></div>
                 <div class="card_main text_body text tab_blocks">
                 </div>   
                 <div class="card_footer">
                     <div class="card_blocks">
                         <nav class="tab_blocks photo">
-                            <a href="#">Add</a>
+                            <a href="#">
+                                <form action="photo.js" enctype="multipart/form-data" method="post">
+                                    <input type="button" value="Add" onclick="document.getElementById('file').click();" />
+                                    <input type="file" style="display:none" id="file" name="file"/>
+                                </form>
+                            </a>
                             <a href="#">Return</a>
                             <a href="#">Save</a>
                             <a href="#">Delete</a>
@@ -188,6 +197,6 @@
             </div>
         </main>
     </div>
-    <script src="/script.js" defer></script>
+    <!-- <script src="/script.js" defer></script> -->
 </body>
 </html>

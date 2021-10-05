@@ -7,12 +7,12 @@ if (menuIcon) {
     });
 }
 
-const tabYN = document.querySelector('.tab_y-n');
-const envBody = document.querySelector('.envelope_body');
-if (tabYN) {
-    tabYN.addEventListener("click", function(e) {
-        envBody.classList.toggle('_active');
-    })
+const cardYN = document.querySelector('.addres_click');
+const cardBody = document.querySelector('.card_body');
+if (cardYN) {
+    cardYN.addEventListener("click", function(e) {
+        cardBody.classList.toggle('_addres');
+    });
 }
 
 let tab = function() {

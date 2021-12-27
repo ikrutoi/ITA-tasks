@@ -1,52 +1,36 @@
-let familia = prompt ('Введите вашу фамилию');
+let surname = prompt('Какая ваша фамилия?');
+while (surname === null || !isNaN(+surname)) 
+  surname = prompt('Введите вашу фамилию');
 
-while (familia === '') {
-    familia = prompt ('Введите вашу фамилию, пожалуйста');
-};
+let name = prompt('Какое ваше имя?');
+while (name === null || !isNaN(+name)) 
+  name = prompt('Введите ваше имя');
 
-let name = prompt ('Введите ваше имя');
+let mName = prompt('Какое ваше отчество?');
+while (mName === null || !isNaN(+mName)) 
+  mName = prompt('Введите ваше отчество');
 
-while (name == '') {
-    name = prompt ('Введите ваше имя, пожалуйста');
-};
+let age = +prompt('Какой ваш возраст?');
+while (age === null || isNaN(age) || age > 100 || age < 5) 
+  age = +prompt('Введите ваш возраст');
 
-let otchestvo = prompt ('Введите ваше отчество');
-
-while (otchestvo == '') {
-    otchestvo = prompt ('Введите ваше отчество, пожалуйста');
-};
-
-let age = prompt ('Введите ваш возраст');
-
-while (age == '') {
-    age = prompt ('Введите ваш возраст, пожалуйста');
-};
-
-let gender = confirm ('Ваш пол - мужской?');
+let gender = confirm('Ваш пол - мужской?');
 let pension;
 
-if (gender == true) {
-    gender = 'мужской';
+if (!!gender) {
+  gender = "мужской";
+  if (age < 65) pension = 'нет';
+  else pension = 'да';
 }
-else
-    gender = 'женский';
-
-if (gender == 'мужской' && age >= 63) {
-    pension = 'да';
+else { 
+  gender = "женский";
+  if (age < 60) pension = 'нет';
+  else pension = 'да';
 }
-else
-    pension = 'нет';
 
-if (gender == 'женский' && age >= 58) {
-    pension = 'да';
-}
-else
-    pension = 'нет';
-
-alert (`Ваше ФИО: ${familia} ${name} ${otchestvo}
+alert(`Ваше ФИО: ${surname} ${name} ${mName} 
 Ваш возраст в годах: ${age}
 Ваш возраст в днях: ${age * 365}
 Через 5 лет вам будет: ${age + 5}
 Ваш пол: ${gender}
 Вы на пенсии: ${pension}`);
-
